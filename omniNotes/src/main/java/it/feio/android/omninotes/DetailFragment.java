@@ -1596,6 +1596,7 @@ public class DetailFragment extends BaseFragment implements OnReminderPickedList
 		noteTmp.setAttachmentsListOld(note.getAttachmentsList());
 
 		new SaveNoteTask(mOnNoteSaved, lastModificationUpdatedNeeded()).executeOnExecutor(AsyncTask
+
 				.THREAD_POOL_EXECUTOR, noteTmp);
 	}
 
